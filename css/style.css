@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+
+html,body{
+    padding:0px;
+    margin:0px;
+    font-family:sans-serif;
+}
+
+h1{
+    font-family:Arial;
+    font-weight:100;
+    font-size:40px;
+}
+
+h2{
+    font-family:Arial;
+    font-weight:100;
+    font-size:32px;
+}
+
+video{border-radius:12px; overflow:hidden;}
+
+.page_section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;  
+}
+
+#picture_box{
+    width:50%;
+    height:540px;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    align-items: center;
+    justify-content: center;  
+}
+
+#content_box{
+    min-width:50%;
+    /*height:540px;*/
+    padding-right:5%;
+    box-sizing: border-box;
+}
+
+.tab_container {
+	width: 100%;;
+	padding-top: 72px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+input, section {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+
+label {
+  font-weight: 700;
+  font-size: 18px;
+  display: block;
+  float: left;
+  width: 33.3%;
+    height:48px;
+  color: #757575;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3{
+  display: block;
+  padding: 20px;
+  background: #fff;
+  color: #999;
+  /*border-bottom: 2px solid #f0f0f0;*/
+}
+
+.tab_container .tab-content p,
+.tab_container .tab-content h3 {
+  -webkit-animation: fadeInScale 0.7s ease-in-out;
+  -moz-animation: fadeInScale 0.7s ease-in-out;
+  animation: fadeInScale 0.7s ease-in-out;
+}
+
+.tab_container [id^="tab"]:checked + label {
+  background: #fff;
+  box-shadow: inset 0 -3px #0CE;
+}
+
+.tab_container [id^="tab"]:checked + label .fa {
+  color: #0CE;
+}
+
+.tab-content{padding:120px;}
+
+label .fa {
+  font-size: 1.3em;
+  margin: 0 0.4em 0 0;
+}
+
+/*Content Animation*/
+@keyframes fadeInScale {
+  0% {
+  	/*transform: scale(0.9);*/
+  	opacity: 0;
+  }
+  
+  100% {
+  	/*transform: scale(1);*/
+  	opacity: 1;
+  }
+}
+
+.skills_list{
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+    padding:20px 10%;
+    box-sizing: border-box;
+}
+
+.skill{
+    width:120px;
+    height:120px;
+    background:#ddd;
+    border-radius:24px;
+    overflow:hidden;
+}
+
+.gallery{
+    width:100%;
+    padding:0px 40px 0px 40px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align:center;
+    align-items: center;
+    justify-content: center; 
+}
+
+.gallery_item{
+    cursor:pointer;
+    width:240px;
+    height:320px;
+    background:#aaa;
+    overflow:hidden;
+    border-radius: 24px;
+    margin:12px;
+    transition: transform 0.3s ease-out;
+    box-shadow: 0px 0px 10px #cdcdcd;
+}
+
+.gallery_item:hover{transform:scale(1.1);}
+
+.gallery_thumbnail{
+    width:240px;
+    height:240px;
+    background:#ddd;
+    overflow:hidden;
+}
+
+.gallery_thumbnail img{margin-left:-50px;}
+
+.gallery_desc{
+    font-weight: 200;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    width:240px;
+    height:80px;
+    background:#eee;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+.item{
+    display:none;
+    position:fixed;
+    left:0px; top:0px;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    flex-direction: column;
+    font-weight:200;
+}
+
+.social_list{ 
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+   height:90px;
+}
+
+.social_list div i{width:60px;
+height:60px;
+color: #0CE;
+font-size:48px;
+margin-left:30px;
+    cursor:pointer;
+    
+}
+
+@media (min-width : 1080px ) and ( max-width : 3840px ){
+.page_section{
+    flex-direction: row;    
+}
+    
+    #picture_box{
+        width:40%;
+    }
+    
+#content_box{
+    width:60%;
+}
+}
+
+@media ( min-width : 0px ) and (max-width : 1080px ){
+.page_section{
+    flex-direction: column;    
+}
+    
+#picture_box, #content_box{
+    width:100%;
+}
+
+  label span {
+    display: none;
+  }
+  
+  .tab_container {
+    width: 100%;
+  }
+
+#content_box{
+    padding:0px;
+}    
+}
