@@ -1,1 +1,0 @@
-# gauthamprithvirajan.github.io
