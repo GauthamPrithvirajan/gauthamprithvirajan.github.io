@@ -6,7 +6,18 @@ html,body{
     padding:0px;
     margin:0px;
     font-family:sans-serif;
-	background: #FBFBFB;
+	background: #fff;
+}
+
+button{
+  background-color: #0CE;
+  border-style: none;
+  padding:12px 24px 12px 24px;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 24px;;
+  font-weight:400;
+  cursor: pointer;
 }
 
 h1{
@@ -30,8 +41,9 @@ video{border-radius:12px; overflow:hidden;}
 }
 
 #picture_box{
+  margin-top:48px;
     width:50%;
-    height:460px;
+    height:540px;
     display: flex;
     flex-direction: column;
     text-align:center;
@@ -39,17 +51,26 @@ video{border-radius:12px; overflow:hidden;}
     justify-content: center;  
 }
 
+#picture_me{
+  width:252px; height:252px; border-radius :160px; background:#fff; overflow:hidden;
+}
+
+#picture_me img{
+  width:252px;
+  height:252px;
+}
+
 #content_box{
     min-width:50%;
-    /*height:540px;*/
-    padding-right:5%;
+    /*height:540px;
+    padding-right:5%;*/
     box-sizing: border-box;
-	background: #FBFBFB;
+	background: #fff;
 }
 
 .tab_container {
 	width: 100%;;
-	padding-top: 72px;
+	padding-top: 96px;
     display:flex;
     flex-wrap: wrap;
 }
@@ -62,7 +83,7 @@ input, section {
 
 label {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1em;
   display: block;
   float: left;
   width: 33.3%;
@@ -108,6 +129,12 @@ label {
 }
 
 .tab-content{padding:120px;}
+
+.tab-content h3{font-size:1.2em; color:#454545;}
+
+.tab-content h4{font-size:1em; color:#454545; font-weight:200;}
+
+.tab-content p{font-size:1em; margin-block-start: -1em; margin-block-end: 1em;}
 
 label .fa {
   font-size: 1.3em;
@@ -156,8 +183,8 @@ label .fa {
 
 .gallery_item{
     cursor:pointer;
-    width:240px;
-    height:320px;
+    width:320px;
+    height:420px;
     background:#aaa;
     overflow:hidden;
     border-radius: 24px;
@@ -169,8 +196,8 @@ label .fa {
 .gallery_item:hover{transform:scale(1.1);}
 
 .gallery_thumbnail{
-    width:240px;
-    height:240px;
+    width:320px;
+    height:320px;
     background:#ddd;
     overflow:hidden;
 }
@@ -178,13 +205,18 @@ label .fa {
 .gallery_thumbnail img{margin-left:-50px;}
 
 .gallery_desc{
-    font-weight: 200;
+    font-weight: 600;
     font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
-    width:240px;
-    height:80px;
+    width:320px;
+    height:100px;
     background:#eee;
     padding:10px;
     box-sizing: border-box;
+}
+
+.gallery_desc p{
+  font-weight: 200;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 }
 
 .item{
@@ -204,21 +236,26 @@ label .fa {
 }
 
 .social_list{ 
+  margin-top:24px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
     width:100%;
-   height:90px;
+   height:56px;
 }
 
-.social_list div i{width:60px;
-height:60px;
+.social_list div i{width:36px;
+height:36px;
 color: #0CE;
 font-size:48px;
-margin-left:30px;
+margin:0px 12px 0px 12px;
     cursor:pointer;
     
+}
+
+.social_list .fa{
+  font-size:36px;
 }
 
 @media (min-width : 1080px ) and ( max-width : 3840px ){
@@ -237,11 +274,24 @@ margin-left:30px;
 
 @media ( min-width : 0px ) and (max-width : 1080px ){
 .page_section{
-    flex-direction: column;    
+    flex-direction: column;   
+    width:100%; 
+    justify-content: center;
 }
     
 #picture_box, #content_box{
     width:100%;
+}
+
+
+.gallery{
+  width:100%;
+  padding:0px 20px 0px 20px;
+  display:flex;
+  flex-wrap: wrap;
+  text-align:center;
+  align-items: center;
+  justify-content: center; 
 }
 
   label span {
@@ -250,6 +300,7 @@ margin-left:30px;
   
   .tab_container {
     width: 100%;
+    padding-top:0px;
   }
 
 #content_box{
