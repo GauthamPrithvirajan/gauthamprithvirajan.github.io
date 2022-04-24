@@ -7,6 +7,7 @@ html,body{
     margin:0px;
     font-family:sans-serif;
 	background: #fff;
+	overflow-x:hidden;
 }
 
 button{
@@ -38,7 +39,8 @@ video{border-radius:12px; overflow:hidden;}
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;  
-	    justify-content: center
+	justify-content: center;
+	height:100vh;
 }
 
 #picture_box{
@@ -284,10 +286,14 @@ margin:0px 12px 0px 12px;
     width:100%; 
     justify-content: center;
 }
-
-.tab_container{margin-top:64px;}
     
-#picture_box, #content_box{
+#picture_box{
+	width:100vw;
+	height:80vh;
+	transform:scale(2);
+}	
+	
+#content_box{
     width:100vw;
 }
 
