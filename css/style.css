@@ -41,7 +41,7 @@ video{border-radius:12px; overflow:hidden;}
     flex-direction: row;  
 	justify-content: center;
 	height:100vh;
-	background:#eee;
+	background:#ffffff;
 }
 
 #label_name{
@@ -57,7 +57,6 @@ video{border-radius:12px; overflow:hidden;}
     text-align:center;
     align-items: center;
     justify-content: center;
-	background:#fff;
 }
 
 #picture_me{
