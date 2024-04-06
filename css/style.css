@@ -60,7 +60,7 @@ video{border-radius:12px; overflow:hidden;}
 }
 
 #picture_me{
-  width:252px; height:252px; border-radius :160px; background:#fff; overflow-y:scroll;
+  width:252px; height:252px; border-radius :160px; background:#fff; overflow-y:hidden;
 }
 
 #picture_me img{
@@ -119,13 +119,13 @@ margin:0px 1.2vw 0px 1.2vw;
 h1{
     font-family:Arial;
     font-weight:100;
-    font-size:3.2em;
+    font-size:2.8em;
 }
 
 h2{
     font-family:Arial;
     font-weight:100;
-    font-size:2.6em;
+    font-size:2.2em;
 }	
 	
 .page_section{
