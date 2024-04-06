@@ -124,8 +124,7 @@ margin:0px 1.2vw 0px 1.2vw;
     
 #picture_box{
 	width:100vw;
-	height:80vh;
-	transform:scale(0.8);
+	height:100vh;
 }	
 	
 #content_box{
