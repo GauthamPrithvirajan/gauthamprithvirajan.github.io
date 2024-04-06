@@ -118,17 +118,14 @@ margin:0px 1.2vw 0px 1.2vw;
 @media ( min-width : 0px ) and (max-width : 1080px ){
 .page_section{
     flex-direction: column;   
-    width:100vw; 
-    justify-content: center;
 }
     
 #picture_box{
-	width:100vw;
-	height:100vh;
+
 }	
 	
 #content_box{
-    width:100vw;
+
 }
 }
 
