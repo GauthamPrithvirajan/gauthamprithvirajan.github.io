@@ -107,11 +107,11 @@ margin:0px 1.2vw 0px 1.2vw;
 }
     
     #picture_box{
-        width:26vw;
+        width:100vw;
     }
     
 #content_box{
-    width:70vw;
+    width:100vw;
 }
 }
 
@@ -125,7 +125,7 @@ margin:0px 1.2vw 0px 1.2vw;
 #picture_box{
 	width:100vw;
 	height:80vh;
-	transform:scale(2);
+	transform:scale(0.8);
 }	
 	
 #content_box{
