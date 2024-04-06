@@ -39,7 +39,7 @@ video{border-radius:12px; overflow:hidden;}
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;  
-	justify-content: left;
+	justify-content: center;
 	height:100vh;
 	background:#eee;
 }
