@@ -60,7 +60,7 @@ video{border-radius:12px; overflow:hidden;}
 }
 
 #picture_me{
-  width:252px; height:252px; border-radius :160px; background:#fff; overflow:hidden;
+  width:252px; height:252px; border-radius :160px; background:#fff; overflow-y:scroll;
 }
 
 #picture_me img{
