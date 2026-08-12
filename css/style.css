@@ -159,6 +159,31 @@ width:100%;
 #content_box{
 width:100%;
 }
+
+	#content_box p{width:fit-content;}
+
+.social_list{ 
+  margin-top:12px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+	height:56px;
+}
+
+.social_list div i{width:36px;
+height:36px;
+color: #0CE;
+font-size:48px;
+margin:0px 1.2vw 0px 1.2vw;
+    cursor:pointer;
+    
+}
+
+.social_list .fa{
+  font-size:36px;
+}
 }
 
 
