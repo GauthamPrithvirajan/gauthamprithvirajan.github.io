@@ -176,12 +176,17 @@ margin:0px 1.2vw 0px 1.2vw;
 	}
 	
 	.social_list div i{
-	width:64px;
-	height:64px;
-	color: #0CE;
-	font-size:64px;
-	margin:0px 1.2vw 0px 1.2vw;
-	cursor:pointer;
+		width:64px;
+		height:64px;
+		color: #0CE;
+		font-size:64px;
+		margin:0px 1.2vw 0px 1.2vw;
+		cursor:pointer;
+	}
+
+	.social_list img{
+		width:64px;
+		height:64px;
 	}
 	
 	.social_list .fa{
