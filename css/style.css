@@ -97,6 +97,11 @@ margin:0px 1.2vw 0px 1.2vw;
     
 }
 
+.social_list div img{width:36px;
+height:36px;
+
+				  }
+
 .social_list .fa{
   font-size:36px;
 }
