@@ -116,77 +116,77 @@ margin:0px 1.2vw 0px 1.2vw;
 }
 
 @media ( min-width : 0px ) and (max-width : 1080px ){
-h1{
-    font-family:Arial;
-    font-weight:100;
-    font-size:4.8em;
-}
-
-h2{
-    font-family:Arial;
-    font-weight:100;
-    font-size:4em;
-}	
-
-button{
-  background-color: #0CE;
-  border-style: none;
-  padding:12px 24px 12px 24px;
-  color: #ffffff;
-  border-radius: 16px;
-  font-size: 64px;
-  font-weight:400;
-  cursor: pointer;
-}
+	h1{
+	    font-family:Arial;
+	    font-weight:100;
+	    font-size:4.8em;
+	}
 	
-.page_section{
-    flex-direction: column;   
-}
-    
-#picture_box{
-width:100%;
-}	
-
-	#picture_me{
-  width:420px; height:420px; border-radius :210px; background:#fff; overflow:hidden;
-}
-
-#picture_me img{
-  width:420px;
-  height:420px;
-}
+	h2{
+	    font-family:Arial;
+	    font-weight:100;
+	    font-size:4em;
+	}	
 	
-#content_box{
-width:100%;
-}
-
+	button{
+	  background-color: #0CE;
+	  border-style: none;
+	  padding:12px 24px 12px 24px;
+	  color: #ffffff;
+	  border-radius: 16px;
+	  font-size: 64px;
+	  font-weight:400;
+	  cursor: pointer;
+	}
+		
+	.page_section{
+	    flex-direction: column;   
+	}
+	    
+	#picture_box{
+	width:100%;
+	}	
+	
+		#picture_me{
+	  width:420px; height:420px; border-radius :210px; background:#fff; overflow:hidden;
+	}
+	
+	#picture_me img{
+	  width:420px;
+	  height:420px;
+	}
+		
+	#content_box{
+	width:100%;
+	}
+	
 	#content_box p{
 		width:fit-content; 
 		font-size:1.6em;
 	}
-
-.social_list{ 
-  margin-top:12px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    width:100%;
-	height:72px;
-}
-
-.social_list div i{width:64px;
-height:64px;
-color: #0CE;
-font-size:64px;
-margin:0px 1.2vw 0px 1.2vw;
-    cursor:pointer;
-    
-}
-
-.social_list .fa{
-  font-size:64px;
-}
+	
+	.social_list{ 
+		margin-top:12px;
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		justify-content: center;
+		width:100%;
+		height:72px;
+	}
+	
+	.social_list div i{
+	width:64px;
+	height:64px;
+	color: #0CE;
+	font-size:64px;
+	margin:0px 1.2vw 0px 1.2vw;
+	cursor:pointer;
+	}
+	
+	.social_list .fa{
+	  font-size:64px;
+	}
 }
 
 
