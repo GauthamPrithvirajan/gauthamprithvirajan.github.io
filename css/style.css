@@ -76,7 +76,7 @@ video{border-radius:12px; overflow:hidden;}
     align-content: center;
 }
 
-#content_box p{width:280px;}
+#content_box p{width:fit-content;}
 
 .social_list{ 
   margin-top:12px;
