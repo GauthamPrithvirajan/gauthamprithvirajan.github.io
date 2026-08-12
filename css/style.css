@@ -146,6 +146,15 @@ button{
 #picture_box{
 width:100%;
 }	
+
+	#picture_me{
+  width:420px; height:420px; border-radius :160px; background:#fff; overflow:hidden;
+}
+
+#picture_me img{
+  width:420px;
+  height:420px;
+}
 	
 #content_box{
 width:100%;
