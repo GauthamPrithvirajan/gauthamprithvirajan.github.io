@@ -119,14 +119,25 @@ margin:0px 1.2vw 0px 1.2vw;
 h1{
     font-family:Arial;
     font-weight:100;
-    font-size:2.8em;
+    font-size:4.8em;
 }
 
 h2{
     font-family:Arial;
     font-weight:100;
-    font-size:2.2em;
+    font-size:4em;
 }	
+
+button{
+  background-color: #0CE;
+  border-style: none;
+  padding:12px 24px 12px 24px;
+  color: #ffffff;
+  border-radius: 16px;
+  font-size: 64px;
+  font-weight:400;
+  cursor: pointer;
+}
 	
 .page_section{
     flex-direction: column;   
